@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./login.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,8 +12,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <div className="border-2 border-purple-600 p-20 rounded-xl">
+    <div className="flex h-screen bg-image bg-cover bg-center bg-no-repeat w-screen items-center justify-center">
+      <div className="border-2 border-purple-600 p-40 rounded-xl">
         <form
           onSubmit={(e) => {
             submitHandler(e);
