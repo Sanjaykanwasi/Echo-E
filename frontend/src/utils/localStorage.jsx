@@ -4,6 +4,12 @@ const employees = [
     name: "Alice Smith",
     email: "alice.smith@example.com",
     password: "sanjay",
+    taskNumbers: {
+      active: 3,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -53,6 +59,12 @@ const employees = [
     name: "Bob Johnson",
     email: "bob.johnson@example.com",
     password: "sanjay",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -91,6 +103,12 @@ const employees = [
     name: "Charlie Williams",
     email: "charlie.williams@example.com",
     password: "sanjay",
+    taskNumbers: {
+      active: 3,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+    },
     tasks: [
       {
         active: true,
@@ -150,6 +168,12 @@ const employees = [
     name: "David Brown",
     email: "david.brown@example.com",
     password: "sanjay",
+    taskNumbers: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -188,6 +212,12 @@ const employees = [
     name: "Eve Davis",
     email: "eve.davis@example.com",
     password: "sanjay",
+    taskNumbers: {
+      active: 3,
+      newTask: 1,
+      completed: 1,
+      failed: 0,
+    },
     tasks: [
       {
         active: true,
@@ -250,4 +280,6 @@ export const setLocalStorage = () => {
 export const getLocalStorage = () => {
   const employees = JSON.parse(localStorage.getItem("employees"));
   const admin = JSON.parse(localStorage.getItem("admin"));
+
+  return { employees, admin };
 };
